@@ -9,5 +9,5 @@ const filme = {
 
 // Usando IF para checar se o filme é liberado para todas as idades
 if(filme.indicadoParaMaiores == false){
-    console.log('Filme indicado para todas as idades')
+    console.log(`Filme ${filme.titulo} é indicado para todas as idades`)
 }
