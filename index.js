@@ -31,3 +31,8 @@ if(!filme.indicadoParaMaiores){
 if(!filme.indicadoParaMaiores && filme.avaliacao > 5) {
     console.log(`[if 05] O Filme ${filme.titulo} é indicado para todas as idades e está acima da média`)
 }
+
+// Usando duas condições obrigatórias no if
+if(filme.indicadoParaMaiores || filme.avaliacao > 5) {
+    console.log(`[if 06] O Filme ${filme.titulo} é indicado para todas as idades e está acima da média`)
+}
