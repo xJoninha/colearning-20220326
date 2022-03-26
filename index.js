@@ -6,3 +6,8 @@ const filme = {
     indicadoParaMaiores: false,
     ano: 2022
 }
+
+// Usando IF para checar se o filme é liberado para todas as idades
+if(filme.indicadoParaMaiores == false){
+    console.log('Filme indicado para todas as idades')
+}
