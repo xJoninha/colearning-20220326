@@ -44,7 +44,25 @@ if(!filme.indicadoParaMaiores && (filme.avaliacao > 5 || filme.ano === 1990)){
 
 // Condicional com IF/ELSE
 if(filme.indicadoParaMaiores) {
-  console.log(`[if 08 IF] O filme ${filme.titulo} NÃO é indicado para todas as idades`)
-} else {
-  console.log(`[if 08 ELSE] O filme ${filme.titulo} é indicado para todas as idades`)
-}
+    console.log(`[if 08 IF] O filme ${filme.titulo} NÃO é indicado para todas as idades`)
+  } else {
+    console.log(`[if 08 ELSE] O filme ${filme.titulo} é indicado para todas as idades`)
+  }
+
+// Condicional com IF/ELSE usando IF TERNÁRIO (onde ? representa o if e : o else)
+// {CONDICAO} ? {SE TRUE} : {SE FALSE}
+filme.indicadoParaMaiores
+  ? console.log(`[if 09 IF] O filme ${filme.titulo} NÃO é indicado para todas as idades`)
+  : console.log(`[if 09 ELSE] O filme ${filme.titulo} é indicado para todas as idades`)
+
+// Mesma condição mas com o IF TERNÁRIO dentro do console.log()
+console.log(filme.indicadoParaMaiores ? `[if 10 IF] O filme ${filme.titulo} NÃO é indicado para todas as idades` : `[if 10 ELSE] O filme ${filme.titulo} é indicado para todas as idades`)
+
+// Condicional com IF/ELSE IF/ELSE
+if(filme.indicadoParaMaiores) {
+    console.log(`[if 11 IF] O filme ${filme.titulo} NÃO é indicado para todas as idades`)
+  } else if (filme.titulo === "Titanic") {
+    console.log(`[if 11 ELSE IF] O nome do filme é Titanic`)
+  } else {
+    console.log(`[if 11 ELSE] O filme ${filme.titulo} é indicado para todas as idades e seu título não é Titanic`)
+  }
