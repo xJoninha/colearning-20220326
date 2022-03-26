@@ -26,3 +26,8 @@ if(!filme.indicadoParaMaiores){
 
 // Mesmo short circuit, porém estamos passando o nome do filme errado (filme.title). Se não houver o title (null, undefined...) ele lê uma segunda opção (filme.titulo)
 !filme.indicadoParaMaiores && console.log(`[if 04] O Filme ${filme.title || filme.titulo} é indicado para todas as idades`)
+
+// Usando duas condições obrigatórias no if
+if(!filme.indicadoParaMaiores && filme.avaliacao > 5) {
+    console.log(`[if 05] O Filme ${filme.titulo} é indicado para todas as idades e está acima da média`)
+}
